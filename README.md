@@ -109,10 +109,12 @@ deployは環境変数がないのでエラーした。
 
 ### My sample project
 
-公式サンプルはフロントエンド用だったので、
-[react-learning](https://github.com/kn25ha01/react-learning)でもそのまま動きそう？
-プロジェクトルートにコピペしてもそのまま動かなかった。
+公式サンプルはフロントエンド用だったので
+[react-learning](https://github.com/kn25ha01/react-learning)でもほぼそのまま動いた。
 
-`dagger project init`を実行すると`cue.mod`ディレクトリが生成された。
-`dagger project update`も実行する。
-パスが合ってなくてすぐに動かない。
+以下の通り実行する。
+```
+dagger project init
+dagger project update
+dagger do build
+```
